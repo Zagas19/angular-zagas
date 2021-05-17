@@ -1,10 +1,16 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
+  selector: 'zagas',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  //styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'bases';
+  public titulo:string = 'Contador App';
+  public numero:number=10;
+  public base:number=5;
+
+  acumular(valor:number){
+    this.numero+=valor;
+  }
 }
